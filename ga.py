@@ -181,7 +181,7 @@ for _ in range(GENERATIONS):
     offspring = []
     np.random.shuffle(parents)
     for i in range(0, POP_SIZE, 2):
-        print(parents)
+        # print(parents)
         if np.random.rand() < CROSSOVER_PROB:
             c1, c2 = arithmetic_crossover(parents[i], parents[i + 1])
         else:
